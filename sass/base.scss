@@ -1,0 +1,31 @@
+$color-primary: #54B0FD;
+$color-secondary: #16BAC5;
+$color-tertiary: #E1CA96;
+$color-dark: #171D1C;
+$color-four: #0A2239;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 10vh 80vh 80vh 60vh 10vh;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    font-size: 1.5rem;
+}
+
+
+
+

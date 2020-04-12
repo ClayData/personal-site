@@ -1,0 +1,46 @@
+@mixin formstyle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border: .2rem solid #ccc;
+    border-radius: 4px;
+    width: 80rem;
+}
+
+.contact {
+    background-color: $color-four;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #fff;
+    font-size: 2rem;
+
+    &__form{
+        grid-column: 2 / 5;
+        justify-self: center;
+        margin-top: 2rem;
+        margin-right: 30rem;
+
+        &-name{
+            height: 2.5rem;
+            @include formstyle;
+        }
+
+        &-email{
+            height: 2.5rem;
+            @include formstyle;
+        }
+
+        &-subject{
+            height: 2.5rem;
+            @include formstyle;
+        }
+
+        &-message {
+            height: 20rem;
+            @include formstyle;
+        }
+    }
+
+}
+
+

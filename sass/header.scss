@@ -1,0 +1,17 @@
+
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $color-primary;
+    color: #fff;
+    border-bottom-style: solid;
+
+    &__name{
+        align-self: center;
+        justify-self: center;
+        font-size: 4.5rem;
+        font-weight: bolder;
+    }
+}

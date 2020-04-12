@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Libre Franklin', sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10vh 80vh 80vh 60vh 10vh;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  font-size: 1.5rem; }
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #54B0FD;
+  color: #fff;
+  border-bottom-style: solid; }
+  .header__name {
+    align-self: center;
+    justify-self: center;
+    font-size: 4.5rem;
+    font-weight: bolder; }
+
+.about-me {
+  background-color: #16BAC5; }
+
+.projects {
+  display: grid;
+  background-color: #E1CA96;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr repeat(4, 2fr) 1fr; }
+  .projects__title {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #0A2239;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; }
+  .projects__card {
+    background-color: white;
+    width: 25rem;
+    height: 45rem;
+    border-radius: .4rem; }
+    .projects__card-1 {
+      grid-row: 2 /3;
+      grid-column: 2 / 3;
+      justify-self: center;
+      padding: 2rem; }
+    .projects__card-2 {
+      grid-row: 2 /3;
+      grid-column: 3 / 4;
+      justify-self: center;
+      padding: 2rem; }
+    .projects__card-3 {
+      grid-row: 2 /3;
+      grid-column: 4 / 5;
+      justify-self: center;
+      padding: 2rem; }
+    .projects__card-4 {
+      grid-row: 2 /3;
+      grid-column: 5 / 6;
+      justify-self: center;
+      padding: 2rem; }
+
+.contact {
+  background-color: #0A2239;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  color: #fff;
+  font-size: 2rem; }
+  .contact__form {
+    grid-column: 2 / 5;
+    justify-self: center;
+    margin-top: 2rem;
+    margin-right: 30rem; }
+    .contact__form-name {
+      height: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border: .2rem solid #ccc;
+      border-radius: 4px;
+      width: 80rem; }
+    .contact__form-email {
+      height: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border: .2rem solid #ccc;
+      border-radius: 4px;
+      width: 80rem; }
+    .contact__form-subject {
+      height: 2.5rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border: .2rem solid #ccc;
+      border-radius: 4px;
+      width: 80rem; }
+    .contact__form-message {
+      height: 20rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border: .2rem solid #ccc;
+      border-radius: 4px;
+      width: 80rem; }
+
+.footer {
+  background-color: #54B0FD;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  border-top-style: solid; }
+  .footer__github {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center; }
+  .footer__linkedin {
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center; }

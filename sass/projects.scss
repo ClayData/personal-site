@@ -1,0 +1,52 @@
+.projects{
+    display: grid;
+    background-color: $color-tertiary;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+    align-self: center;
+
+    &__title{
+        font-size: 4rem;
+        font-weight: bolder;
+        color: $color-four;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+    }
+
+    &__card{
+        background-color: white;
+        width: 25rem;
+        height: 45rem;
+        border-radius: .4rem;
+    
+        &-1{
+            grid-row: 2 /3;
+            grid-column: 2 / 3;
+            justify-self: center;
+            padding: 2rem;
+        }
+
+        &-2{
+            grid-row: 2 /3;
+            grid-column: 3 / 4;
+            justify-self: center;
+            padding: 2rem;
+        }
+
+        &-3{
+            grid-row: 2 /3;
+            grid-column: 4 / 5;
+            justify-self: center;
+            padding: 2rem;
+        }
+
+        &-4{
+            grid-row: 2 /3;
+            grid-column: 5 / 6;
+            justify-self: center;
+            padding: 2rem;
+        }
+
+    }   
+}

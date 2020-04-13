@@ -13,5 +13,25 @@
         justify-self: center;
         font-size: 4.5rem;
         font-weight: bolder;
+        text-transform: uppercase;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    &__link{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        align-self: center;
+        justify-self: center;
+        
+        &-github-image{
+            align-self: center;
+            justify-self: center;
+        }
+
+        &-linkedin-image{
+            align-self: center;
+            justify-self: center;
+        }
     }
 }

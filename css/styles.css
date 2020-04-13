@@ -47,7 +47,21 @@ html {
     align-self: center;
     justify-self: center;
     font-size: 4.5rem;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-transform: uppercase;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; }
+  .header__link {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: center; }
+    .header__link-github-image {
+      align-self: center;
+      justify-self: center; }
+    .header__link-linkedin-image {
+      align-self: center;
+      justify-self: center; }
 
 .about {
   background-image: linear-gradient(to left bottom, rgba(10, 34, 57, 0.8), rgba(99, 118, 141, 0.8)), url("../img/boundary-waters.jpg");
@@ -59,20 +73,37 @@ html {
   .about__textbox {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    background-color: #54B0FD; }
+    background-color: #54B0FD;
+    border-style: solid;
+    border-width: .1rem;
+    border-radius: .4rem;
+    border-color: #0A2239;
+    display: grid;
+    grid-template-columns: [img-start] 1fr [img-end] 1fr [info-end];
+    grid-template-rows: [head-start] 1fr [head-end] 6fr [rest-end]; }
+    .about__textbox-header {
+      grid-row: head-start / head-end;
+      grid-column: img-start / info-end;
+      justify-self: center;
+      align-self: center; }
+    .about__textbox-info {
+      grid-column: img-end / info-end;
+      grid-row: head-end / rest-end; }
 
 .projects {
   display: grid;
   background-image: linear-gradient(to right bottom, rgba(84, 176, 253, 0.8), rgba(10, 34, 57, 0.8)), url("../img/minneapolis_skyline.jpg");
   grid-template-rows: 1fr 5fr;
-  grid-template-columns: 1fr repeat(4, 2fr) 1fr; }
+  grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+  color: #171D1C; }
   .projects__header {
     font-size: 4rem;
     font-weight: bolder;
     color: #0A2239;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    align-self: center; }
+    align-self: center;
+    justify-self: center; }
   .projects__card {
     background-color: #f7f7f7;
     width: 25rem;
@@ -139,11 +170,15 @@ html {
   color: #fff;
   font-size: 2rem;
   border-top: solid; }
-  .contact__form {
-    grid-column: 2 / 5;
+  .contact__header {
+    font-size: 3.5rem;
+    grid-column: 1 / 2;
     justify-self: center;
-    margin-top: 2rem;
-    margin-right: 30rem; }
+    margin-top: 3rem; }
+  .contact__form {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin-top: 2rem; }
     .contact__form-name {
       height: 2.5rem;
       font-size: 2rem;
@@ -172,22 +207,29 @@ html {
       border: .2rem solid #ccc;
       border-radius: 4px;
       width: 80rem; }
+    .contact__form-btn {
+      background-color: #54B0FD;
+      color: #f7f7f7;
+      display: inline-block;
+      padding: .75rem 3rem;
+      font-size: 1.5rem;
+      border-radius: .5rem;
+      text-transform: uppercase;
+      transition: all .2s; }
+      .contact__form-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(23, 29, 28, 0.2); }
+        .contact__form-btn:hover::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0; }
 
 .footer {
   background-color: #63768d;
-  color: #fff;
+  color: #f7f7f7;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(4, 1fr);
   border-top-style: solid; }
-  .footer__github {
-    grid-column: 2 / 3;
-    align-self: center;
-    justify-self: center; }
-  .footer__linkedin {
-    grid-column: 3 / 4;
-    align-self: center;
-    justify-self: center; }
 
 .popup {
   height: 100vh;

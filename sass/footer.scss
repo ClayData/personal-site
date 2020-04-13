@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-secondary;
-    color: #fff;
+    color: $color-light;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
@@ -8,16 +8,5 @@
     
     
 
-    &__github{
-        grid-column: 2 / 3;
-        align-self: center;
-        justify-self: center;
-        
-    }
-
-    &__linkedin{
-        grid-column: 3 / 4;
-        align-self: center;
-        justify-self: center;
-    }
+   
 }

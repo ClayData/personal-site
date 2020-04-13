@@ -10,7 +10,7 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-four, 0.8)), url("../img/minneapolis_skyline.jpg");
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr repeat(4, 2fr) 1fr;
-    
+    color: $color-dark;
 
     &__header{
         font-size: 4rem;
@@ -19,6 +19,8 @@
         grid-row: 1 / 2;
         grid-column: 2 / 3;
         align-self: center;
+        justify-self: center;
+        
     }
 
     &__card{
@@ -45,6 +47,7 @@
             align-self: center;
             font-size: 3rem;
             font-weight: bold;
+            
         }
         
         &-description{

@@ -7,7 +7,7 @@
 
 .projects{
     display: grid;
-    background-color: $color-tertiary;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-four, 0.8)), url("../img/minneapolis_skyline.jpg");
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr repeat(4, 2fr) 1fr;
     

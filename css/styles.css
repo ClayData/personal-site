@@ -40,8 +40,8 @@ html {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #54B0FD;
-  color: #fff;
+  background-color: #63768d;
+  color: #f7f7f7;
   border-bottom-style: solid; }
   .header__name {
     align-self: center;
@@ -49,12 +49,21 @@ html {
     font-size: 4.5rem;
     font-weight: bolder; }
 
-.about-me {
-  background-color: #16BAC5; }
+.about {
+  background-image: linear-gradient(to left bottom, rgba(10, 34, 57, 0.8), rgba(99, 118, 141, 0.8)), url("../img/boundary-waters.jpg");
+  border-top-style: solid;
+  border-top-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr; }
+  .about__textbox {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #54B0FD; }
 
 .projects {
   display: grid;
-  background-color: #E1CA96;
+  background-image: linear-gradient(to right bottom, rgba(84, 176, 253, 0.8), rgba(10, 34, 57, 0.8)), url("../img/minneapolis_skyline.jpg");
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr repeat(4, 2fr) 1fr; }
   .projects__header {
@@ -128,7 +137,8 @@ html {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 4fr 1fr;
   color: #fff;
-  font-size: 2rem; }
+  font-size: 2rem;
+  border-top: solid; }
   .contact__form {
     grid-column: 2 / 5;
     justify-self: center;
@@ -164,7 +174,7 @@ html {
       width: 80rem; }
 
 .footer {
-  background-color: #54B0FD;
+  background-color: #63768d;
   color: #fff;
   display: grid;
   grid-template-rows: 1fr;

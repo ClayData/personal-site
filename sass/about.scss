@@ -1,3 +1,16 @@
-.about-me{
-    background-color: $color-secondary;
+.about{
+    background-image:linear-gradient(to left bottom, rgba($color-four, 0.8), rgba($color-secondary, 0.8)), url("../img/boundary-waters.jpg");
+    border-top-style: solid;
+    border-top-color: $color-light;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+
+    &__textbox{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        background-color: $color-primary;
+
+    }
 }

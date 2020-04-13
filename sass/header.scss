@@ -4,8 +4,8 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    background-color: $color-primary;
-    color: #fff;
+    background-color: $color-secondary;
+    color: $color-light;
     border-bottom-style: solid;
 
     &__name{

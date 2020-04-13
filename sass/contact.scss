@@ -13,6 +13,7 @@
     grid-template-columns: 1fr 4fr 1fr;
     color: #fff;
     font-size: 2rem;
+    border-top: solid;
 
     &__form{
         grid-column: 2 / 5;

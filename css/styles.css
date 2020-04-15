@@ -12,9 +12,12 @@ html {
 .container {
   display: grid;
   grid-template-rows: 10vh 80vh 80vh 60vh 10vh;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(autofill, minmax(160px, 1fr));
   width: 100vw;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      grid-template-rows: 15vh 100vh 100vh 100vh 10vh; } }
 
 .btn {
   background-color: #54B0FD;
@@ -42,11 +45,15 @@ html {
   grid-template-columns: repeat(3, 1fr);
   background-color: #63768d;
   color: #f7f7f7;
-  border-bottom-style: solid; }
+  border-bottom-style: solid;
+  grid-auto-flow: row dense; }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      grid-template-rows: repeat(2, 1fr); } }
   .header__name {
     align-self: center;
     justify-self: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bolder;
     text-transform: uppercase;
     grid-row: 1 / 2;
@@ -93,8 +100,8 @@ html {
 .projects {
   display: grid;
   background-image: linear-gradient(to right bottom, rgba(84, 176, 253, 0.8), rgba(10, 34, 57, 0.8)), url("../img/minneapolis_skyline.jpg");
-  grid-template-rows: 1fr 5fr;
-  grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+  grid-template-rows: 1fr, 5fr;
+  grid-template-columns: repeat(3, 1fr);
   color: #171D1C; }
   .projects__header {
     font-size: 4rem;
@@ -143,22 +150,17 @@ html {
       align-self: end; }
     .projects__card-1 {
       grid-row: 2 /3;
-      grid-column: 2 / 3;
+      grid-column: 1 / 2;
       justify-self: center;
       padding: 2rem; }
     .projects__card-2 {
       grid-row: 2 /3;
-      grid-column: 3 / 4;
+      grid-column: 2 / 3;
       justify-self: center;
       padding: 2rem; }
     .projects__card-3 {
       grid-row: 2 /3;
-      grid-column: 4 / 5;
-      justify-self: center;
-      padding: 2rem; }
-    .projects__card-4 {
-      grid-row: 2 /3;
-      grid-column: 5 / 6;
+      grid-column: 3 / 4;
       justify-self: center;
       padding: 2rem; }
 

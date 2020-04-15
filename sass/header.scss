@@ -7,11 +7,15 @@
     background-color: $color-secondary;
     color: $color-light;
     border-bottom-style: solid;
+    grid-auto-flow: row dense;
+    @media only screen and (max-width: 62.5em){
+        grid-template-rows: repeat(2, 1fr);
+    }
 
     &__name{
         align-self: center;
         justify-self: center;
-        font-size: 4.5rem;
+        font-size: 4rem;
         font-weight: bolder;
         text-transform: uppercase;
         grid-row: 1 / 2;

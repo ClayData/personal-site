@@ -8,9 +8,10 @@
 .projects{
     display: grid;
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-four, 0.8)), url("../img/minneapolis_skyline.jpg");
-    grid-template-rows: 1fr 5fr;
-    grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+    grid-template-rows: 1fr, 5fr;
+    grid-template-columns: repeat(3, 1fr);
     color: $color-dark;
+   
 
     &__header{
         font-size: 4rem;
@@ -66,7 +67,7 @@
 
         &-1{
             grid-row: 2 /3;
-            grid-column: 2 / 3;
+            grid-column: 1 / 2;
             justify-self: center;
             padding: 2rem;
             
@@ -74,21 +75,14 @@
 
         &-2{
             grid-row: 2 /3;
-            grid-column: 3 / 4;
+            grid-column: 2 / 3;
             justify-self: center;
             padding: 2rem;
         }
 
         &-3{
             grid-row: 2 /3;
-            grid-column: 4 / 5;
-            justify-self: center;
-            padding: 2rem;
-        }
-
-        &-4{
-            grid-row: 2 /3;
-            grid-column: 5 / 6;
+            grid-column: 3 / 4;
             justify-self: center;
             padding: 2rem;
         }
